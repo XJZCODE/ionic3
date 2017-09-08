@@ -1,0 +1,23 @@
+page-jump {}
+
+.card-content-ios {
+  padding: 0;
+}
+
+.ion-app.ios [padding],
+ion-app.ios [padding] .scroll-content {
+  padding: 0;
+}
+// .card .col .card-ios{
+//     padding: 0;
+//     margin: 0;
+// }
+.ratings {
+  font-size: 35px;
+  color:red;
+  position: absolute;
+  right: 10%;
+  top:5%;
+  color: transparent;
+  -webkit-text-stroke: 3px red;
+}

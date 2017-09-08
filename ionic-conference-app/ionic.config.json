@@ -1,0 +1,12 @@
+{
+  "name": "ionic-conference-app",
+  "app_id": "",
+  "type": "ionic-angular",
+  "integrations": {
+    "cordova": {}
+  },
+  "proxies": [{
+    "path": "/api",
+    "proxyUrl": "https://api.douban.com"
+  }]
+}

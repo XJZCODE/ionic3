@@ -1,0 +1,51 @@
+<!--
+  Generated template for the JumpPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Top250</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+    <ion-refresher (ionRefresh)="doRefresh($event)">
+        <ion-refresher-content></ion-refresher-content>
+      </ion-refresher>
+  <ion-grid>
+    <ion-row>
+      <!-- <ion-col col-6 *ngFor="let item of listData.subjects;let i=index"> -->
+          <ion-col col-6 *ngFor="let item of displayList">
+        <ion-card >
+          <ion-card-content>
+            <!-- <span *ngFor="let x of item"> -->
+              <img src="{{item.images.large}}" alt="">
+              
+            <!-- </span> -->
+            <!-- <span class="ratings">{{item.rating.average}}</span> -->
+              <!-- <img  src="{{item.images.large}}" alt=""> -->
+             
+              <!-- 数组嵌套遍历 -->
+              <!-- <p *ngFor="let item2 of item.casts">{{item2.name}}</p> -->
+              <ion-card-title>
+                  <!-- {{item.title}} -->
+                  {{item.title}}
+              </ion-card-title>
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+
+    </ion-row>
+   
+    
+    <ion-infinite-scroll (ionInfinite)="doInfinite($event)" [hidden]="!isLoadMore">
+      <ion-infinite-scroll-content></ion-infinite-scroll-content>
+    </ion-infinite-scroll>
+  </ion-grid>
+  <ion-item-divider class='list-no-more-tips' color="light" [hidden]="isLoadMore">暂无更多数据...</ion-item-divider>
+</ion-content>
