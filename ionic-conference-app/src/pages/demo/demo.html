@@ -7,14 +7,14 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>华软差生</ion-title>
+    <ion-title>个人中心</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-    <h2 style="margin-top:10px">Battery Level: {{Level}}</h2>
+<ion-content padding class="demo-background">
+  <!-- <h2 style="margin-top:10px">Battery Level: {{Level}}</h2>
 
     <ion-card>
         <ion-card-content>
@@ -23,7 +23,7 @@
         </ion-card-content>
       </ion-card>
        <button ion-button (click)="takePicture()">Take a Picture</button>
-       <button ion-button (click)="verifyFingerprint()">验证指纹</button>
+       <button ion-button (click)="verifyFingerprint()">验证指纹</button> -->
   <!-- <button ion-button color="danger" (click)="jumpToPage">Danger</button> -->
   <!-- <ion-card>
     
@@ -36,10 +36,10 @@
       </ion-item>
     
       <img src="img/card-sf.png"> -->
-    
-      <!-- <ion-card-content> -->
-        <!-- <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p> -->
-      <!-- <p>在我这是我的第一个iOS app demo,以后会开发点什么出来呢？</p>
+
+  <!-- <ion-card-content> -->
+  <!-- <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p> -->
+  <!-- <p>在我这是我的第一个iOS app demo,以后会开发点什么出来呢？</p>
       </ion-card-content>
     
       <ion-row>
@@ -80,8 +80,8 @@
         <img src="assets/img/card-sf.png">
       
         <ion-card-content> -->
-          <!-- <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p> -->
-        <!-- <p>在我这是我的第一个iOS app,这是上大学以后从未想过的一件事，因为需要大量的硬件支持，而现在我终于有这个机会，我喜欢这种随心所欲的感觉。掌握一门技术犹如身披铠甲，让人无所畏惧，希望以后能做出一些有趣的应用出来！</p>
+  <!-- <p>Wait a minute. Wait a minute, Doc. Uhhh... Are you telling me that you built a time machine... out of a DeLorean?! Whoa. This is heavy.</p> -->
+  <!-- <p>在我这是我的第一个iOS app,这是上大学以后从未想过的一件事，因为需要大量的硬件支持，而现在我终于有这个机会，我喜欢这种随心所欲的感觉。掌握一门技术犹如身披铠甲，让人无所畏惧，希望以后能做出一些有趣的应用出来！</p>
         </ion-card-content>
       
         <ion-row>
@@ -105,5 +105,62 @@
         </ion-row>
       
       </ion-card> -->
+  <!-- <ion-card>
+        <ion-card-header>
+          Explore Nearby
+        </ion-card-header> -->
+  <ion-card>
+    <ion-item>
+      <ion-avatar item-start>
+        <img src="assets/img/1.jpg">
+      </ion-avatar>
+      <h2>颜梓煜</h2>
+      <p>点击查看个人信息</p>
+    </ion-item>
+  </ion-card>
+  <ion-card>
+    <button ion-item>
+            <ion-icon name="md-unlock" style="font-size: 20px;color:coral"></ion-icon>
+            <span style="margin-left:15px">修改密码</span>
+            <ion-icon name="ios-arrow-forward-outline" style="font-size: 22px;color:darkgray" item-end></ion-icon>
+            
+          </button>
+    <div class="button-effect1"></div>
+    <button ion-item>
+              <ion-icon name="logo-usd" style="font-size: 20px;color:gold"></ion-icon>
+              <span style="margin-left:15px">账户余额</span>
+              <ion-icon name="ios-arrow-forward" style="font-size: 22px;color:darkgray" item-end></ion-icon>
+              
+            </button>
+
+    <div class="button-effect1"></div>
+    <button ion-item>
+            <ion-icon name="md-contact" style="font-size: 20px;"></ion-icon>
+            <span style="margin-left:10px">个人信息</span>
+            <ion-icon name="ios-arrow-forward" style="font-size: 22px;color:darkgray" item-end></ion-icon>
+          </button>
+
+  </ion-card>
+
+  <ion-card>
+    <button ion-item>
+          <ion-icon name="md-cloud-download" style="font-size: 20px;color:chartreuse;"></ion-icon>
+          <span style="margin-left:8px">检查更新</span>
+          <ion-icon name="ios-arrow-forward" style="font-size: 22px;color:darkgray" item-end></ion-icon>
+        </button>
+    <div class="button-effect1"></div>
+    <button ion-item>
+          <ion-icon name="md-chatboxes" style="font-size: 20px;color:deepskyblue"></ion-icon>
+          <span style="margin-left:9px">联系客服</span>
+          <ion-icon name="ios-arrow-forward" style="font-size: 22px;color:darkgray" item-end></ion-icon>
+        </button>
+    <div class="button-effect1"></div>
+    <button ion-item>
+            <ion-icon name="ios-settings" style="font-size: 20px;"></ion-icon>
+            <span style="margin-left:9px">设置</span>
+            <ion-icon name="ios-arrow-forward" style="font-size: 22px;color:darkgray" item-end></ion-icon>
+          </button>
+  </ion-card>
+  <!-- </ion-card> -->
 
 </ion-content>

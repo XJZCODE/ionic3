@@ -23,3 +23,30 @@ page-schedule {
    }
   }
 }
+.searchbar-md .searchbar-input{
+  border-radius: 25px;
+  height:35px;
+}
+.list-md {
+  margin: -1px 0 3px;
+}
+.list-ios {
+  margin: -1px 0 3px;
+  white-space:nowrap;
+}
+.col{
+  margin-left: 10px;
+}
+ion-col p{
+  margin-top:0px;
+  text-align: center;
+}
+.button-effect1 {
+  height: 1px;
+  border-top: 1px solid #ddd;
+  text-align: center;
+
+}
+// .scroll-content{
+//   overflow-y: hidden;
+// }

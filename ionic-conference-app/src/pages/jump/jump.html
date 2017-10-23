@@ -7,45 +7,55 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>Top250</ion-title>
+    <ion-title>购物车</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content padding>
-    <ion-refresher (ionRefresh)="doRefresh($event)">
-        <ion-refresher-content></ion-refresher-content>
-      </ion-refresher>
-  <ion-grid>
+<ion-content padding style="background:#EDEDED">
+  <ion-refresher (ionRefresh)="doRefresh($event)">
+    <ion-refresher-content></ion-refresher-content>
+  </ion-refresher>
+  <ion-grid class="grid2">
     <ion-row>
       <!-- <ion-col col-6 *ngFor="let item of listData.subjects;let i=index"> -->
-          <ion-col col-6 *ngFor="let item of displayList">
-        <ion-card >
-          <ion-card-content>
-            <!-- <span *ngFor="let x of item"> -->
-              <img src="{{item.images.large}}" alt="">
-              
-            <!-- </span> -->
-            <!-- <span class="ratings">{{item.rating.average}}</span> -->
-              <!-- <img  src="{{item.images.large}}" alt=""> -->
-             
-              <!-- 数组嵌套遍历 -->
-              <!-- <p *ngFor="let item2 of item.casts">{{item2.name}}</p> -->
-              <ion-card-title>
-                  <!-- {{item.title}} -->
-                  {{item.title}}
-              </ion-card-title>
-          </ion-card-content>
+      <ion-col col-12 class="col2">
+        <ion-card class="card-md2">
+          <ion-item>
+            <ion-label>
+
+              <div style="display:flex;flex-direction:row">
+                <div>
+                  <img class="shop-cart-img" src="assets/img/fruit/fruit1.jpg" style="width:90px;height:90px;border: 1px solid #ddd;margin-right:5px" />
+                </div>
+                <div style="">
+                  <h3>新希望 香蕉牛奶饮品200ml*12盒(新老包装交替发货)</h3>
+                  <h4 style="color:#D6D6D6;margin-bottom:30px">颜色:香蕉牛奶</h4>
+                  <span style="position:fixed;left:37%">$29.80</span>
+                </div>
+              </div>
+            </ion-label>
+            <ion-checkbox color="danger" checked="true"></ion-checkbox>
+
+          </ion-item>
+
+        </ion-card>
+        <ion-card class="card-md2">
+          <ion-item>
+            <ion-label><img src="assets/img/fruit/fruit2.jpg" style="width:90px;height:90px;border: 1px solid #ddd" /></ion-label>
+            <ion-checkbox color="danger" checked="true"></ion-checkbox>
+          </ion-item>
+
         </ion-card>
       </ion-col>
 
     </ion-row>
-   
-    
-    <ion-infinite-scroll (ionInfinite)="doInfinite($event)" [hidden]="!isLoadMore">
+
+
+    <!-- <ion-infinite-scroll (ionInfinite)="doInfinite($event)" [hidden]="!isLoadMore">
       <ion-infinite-scroll-content></ion-infinite-scroll-content>
-    </ion-infinite-scroll>
+    </ion-infinite-scroll> -->
   </ion-grid>
-  <ion-item-divider class='list-no-more-tips' color="light" [hidden]="isLoadMore">暂无更多数据...</ion-item-divider>
+  <!-- <ion-item-divider class='list-no-more-tips' color="light" [hidden]="isLoadMore">暂无更多数据...</ion-item-divider> -->
 </ion-content>

@@ -29,3 +29,51 @@ page-speaker-list {
     padding-right: 0;
   }
 }
+// .col_change {
+//   margin-left: 0px;
+//   padding: 0px;
+// }
+// .grid_change {
+//   padding: 0px;
+// }
+::-webkit-scrollbar{width:0px}
+::-moz-scrollbar{width:0px}
+.card-ios_change {
+  margin: 0px !important;
+  text-align: center !important;
+  border-radius: 0px !important;
+  width: calc(100% - 0px);
+}
+.card_height{
+ 
+  width: 100px;
+}
+.card_height ion-card{
+  height:40px;
+}
+ion-card span{
+  line-height: 30px;
+}
+.scroll-content{
+  margin-bottom: 20px!important;
+}
+// .parent{
+//   height:500px;  
+//   border:1px solid #222;  
+//   display:flex;/*设为伸缩容器*/  
+//   flex-flow:row;/*伸缩项目单行排列*/  
+// }  
+// .stable{  
+//   width:200px;/*固定宽度*/  
+//   border:1px solid  #ccc;  
+//   margin:20px;  
+// }  
+// .change{  
+//   flex:1;/*这里设置为占比1，填充满剩余空间*/  
+//   border:1px solid #ff4400;  
+//   margin:20px;  
+// }  
+// .content-ios {
+//   color: #000;
+//   background-color: #fff;
+// }

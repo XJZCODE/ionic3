@@ -21,3 +21,27 @@ ion-app.ios [padding] .scroll-content {
   color: transparent;
   -webkit-text-stroke: 3px red;
 }
+.card-md2{
+  margin:10px 0px !important;
+  width: calc(100% - 0px) !important;
+  
+}
+.col2{
+  margin-left: 0px !important;
+  margin-right: 0px !important;
+  padding: 0px !important;
+  
+}
+.grid2{
+  padding: 0px !important;
+
+}
+.card-ios2{
+  -webkit-box-shadow: 0 0px 0px ;
+  box-shadow: 0 0px 0px ;
+}
+.shop-cart-img{
+  max-width: none!important;
+}
+
+$checkbox-ios-icon-border-radius:50%;

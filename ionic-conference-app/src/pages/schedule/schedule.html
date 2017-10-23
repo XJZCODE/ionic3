@@ -1,10 +1,10 @@
 <ion-header>
-  <ion-navbar no-border-bottom>
+  <!-- <ion-navbar no-border-bottom>
     <button ion-button menuToggle>
       <ion-icon name="menu"></ion-icon>
-    </button>
+    </button> -->
 
-    <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
+    <!-- <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
       <ion-segment-button value="all">
         All
       </ion-segment-button>
@@ -17,23 +17,29 @@
       <button ion-button icon-only (click)="presentFilter()">
         <ion-icon ios="ios-options-outline" md="md-options"></ion-icon>
       </button>
-    </ion-buttons>
-  </ion-navbar>
+    </ion-buttons> -->
 
-  <ion-toolbar no-border-top>
-    <ion-searchbar color="primary"
+    <!-- <ion-searchbar color="primary" [(ngModel)]="queryText" (ionInput)="updateSchedule()" placeholder="Search" style="opacity: 0.8;">
+    </ion-searchbar>
+
+  </ion-navbar> -->
+
+  <!-- <ion-toolbar no-border-top> -->
+  <!-- <ion-searchbar color="primary"
                    [(ngModel)]="queryText"
                    (ionInput)="updateSchedule()"
                    placeholder="Search">
-    </ion-searchbar>
-  </ion-toolbar>
+    </ion-searchbar> -->
+
+  <!-- </ion-toolbar> -->
+  <my-slide></my-slide>
 </ion-header>
 
 <ion-content>
-  <ion-refresher (ionRefresh)="doRefresh($event)">
+  <!-- <ion-refresher (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
-  </ion-refresher>
-
+  </ion-refresher> -->
+  <!-- 
   <ion-list #scheduleList [hidden]="shownSessions === 0">
 
     <ion-item-group *ngFor="let group of groups" [hidden]="group.hide">
@@ -68,20 +74,105 @@
 
     </ion-item-group>
 
+  </ion-list> -->
+  <ion-list  style="margin-top:150px">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <img src="assets/img/jingdon.jpg">
+          <p>全球购</p>
+        </ion-col>
+        <ion-col col-2>
+          <img src="assets/img/jingdon.jpg">
+          <p>全球购</p>
+        </ion-col>
+        <ion-col col-2>
+          <img src="assets/img/jingdon.jpg">
+          <p>全球购</p>
+        </ion-col>
+        <ion-col col-2>
+          <img src="assets/img/jingdon.jpg">
+          <p>全球购</p>
+        </ion-col>
+        <ion-col col-2>
+          <img src="assets/img/jingdon.jpg">
+          <p>全球购</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
   </ion-list>
-
+  <ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col col-2>
+          <img src="assets/img/jingdon.jpg">
+          <p>全球购</p>
+        </ion-col>
+        <ion-col col-2>
+          <img src="assets/img/jingdon.jpg">
+          <p>全球购</p>
+        </ion-col>
+        <ion-col col-2>
+          <img src="assets/img/jingdon.jpg">
+          <p>全球购</p>
+        </ion-col>
+        <ion-col col-2>
+          <img src="assets/img/jingdon.jpg">
+          <p>全球购</p>
+        </ion-col>
+        <ion-col col-2>
+          <img src="assets/img/jingdon.jpg">
+          <p>全球购</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+  <div class="button-effect1"></div>
+  <div style="height:200px;width:100%;white-space:nowrap;overflow:scroll;">
+      <div style="width:30%;display:inline-block;text-align: center;color:red;"><img src="assets/img/yintao.jpg"><p>$999</p></div>
+      <div style="width:30%;display:inline-block;text-align: center;color:red;"><img src="assets/img/yintao.jpg"><p>$999</p></div>
+      <div style="width:30%;display:inline-block;text-align: center;color:red;"><img src="assets/img/yintao.jpg"><p>$999</p></div>
+      <div style="width:30%;display:inline-block;text-align: center;color:red;"><img src="assets/img/yintao.jpg"><p>$999</p></div>
+      <div style="width:30%;display:inline-block;text-align: center;color:red;"><img src="assets/img/yintao.jpg"><p>$999</p></div>
+      <!-- <img style="width:30%;" src="assets/img/yintao.jpg">
+      <img style="width:30%;" src="assets/img/yintao.jpg">
+      <img style="width:30%;" src="assets/img/yintao.jpg">
+      <img style="width:30%;" src="assets/img/yintao.jpg">
+      <img style="width:30%;" src="assets/img/yintao.jpg"> -->
+  </div>
+  <!-- <ion-list>
+      <ion-grid>
+          <ion-row>
+            <ion-col col-3>
+               <img src="assets/img/yintao.jpg">
+            </ion-col>
+            <ion-col col-3>
+                <img src="assets/img/yintao.jpg">
+             </ion-col>
+             <ion-col col-3>
+                <img src="assets/img/yintao.jpg">
+             </ion-col>
+             <ion-col col-3>
+                <img src="assets/img/yintao.jpg">
+             </ion-col>
+          </ion-row>
+      </ion-grid>
+  </ion-list> -->
+  <ion-scroll scrollX="true">
+    
+    </ion-scroll>
   <ion-list-header [hidden]="shownSessions > 0">
-      No Sessions Found
+    No Sessions Found
   </ion-list-header>
 
   <ion-fab bottom right #fab>
-    <button ion-fab><ion-icon name="share"></ion-icon></button>
-    <ion-fab-list side="top">
+    <button ion-fab><ion-icon name="md-cart"></ion-icon></button>
+    <!-- <ion-fab-list side="top">
       <button ion-fab color="vimeo" (click)="openSocial('Vimeo', fab)"><ion-icon name="logo-vimeo"></ion-icon></button>
       <button ion-fab color="google" (click)="openSocial('Google+', fab)"><ion-icon name="logo-googleplus"></ion-icon></button>
       <button ion-fab color="twitter" (click)="openSocial('Twitter', fab)"><ion-icon name="logo-twitter"></ion-icon></button>
       <button ion-fab color="facebook" (click)="openSocial('Facebook', fab)"><ion-icon name="logo-facebook"></ion-icon></button>
-    </ion-fab-list>
+    </ion-fab-list> -->
   </ion-fab>
 
 

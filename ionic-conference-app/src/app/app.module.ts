@@ -10,7 +10,8 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { IonicStorageModule } from '@ionic/storage';
 
 import { ConferenceApp } from './app.component';
-
+import { MySlide } from '../pages/my-slide/my-slide';
+import { GoodsPage } from '../pages/goods/goods';
 import { AboutPage } from '../pages/about/about';
 import { PopoverPage } from '../pages/about-popover/about-popover';
 import { AccountPage } from '../pages/account/account';
@@ -42,6 +43,8 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
     AccountPage,
     LoginPage,
     MapPage,
+    MySlide,
+    GoodsPage,
     PopoverPage,
     SchedulePage,
     ScheduleFilterPage,
@@ -67,6 +70,8 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
         { component: SpeakerListPage, name: 'SpeakerList', segment: 'speakerList' },
         { component: SpeakerDetailPage, name: 'SpeakerDetail', segment: 'speakerDetail/:speakerId' },
         { component: MapPage, name: 'Map', segment: 'map' },
+        { component: MySlide, name: 'MySlide', segment:'MySlide'},
+        { component: GoodsPage, name: 'Goods', segment:'Goods'},
         { component: AboutPage, name: 'About', segment: 'about' },
         { component: TutorialPage, name: 'Tutorial', segment: 'tutorial' },
         { component: SupportPage, name: 'SupportPage', segment: 'support' },
@@ -84,6 +89,8 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
     AccountPage,
     LoginPage,
     MapPage,
+    MySlide,
+    GoodsPage,
     PopoverPage,
     SchedulePage,
     ScheduleFilterPage,
