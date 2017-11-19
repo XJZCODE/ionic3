@@ -1,0 +1,142 @@
+<!--
+  Generated template for the ProductInfoPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar class="toolbar-md1">
+    <ion-segment [(ngModel)]="segment">
+      <ion-segment-button value="product">
+        商品
+      </ion-segment-button>
+      <ion-segment-button value="info">
+        详情
+      </ion-segment-button>
+      <ion-segment-button value="evaluate">
+        评价
+      </ion-segment-button>
+    </ion-segment>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <div *ngIf="segment == 'product'" style="display:flex;flex-direction:column;margin-bottom:100px">
+    <div style="box-shadow: 0px -1px 3px #DDDDDD inset;">
+      <ion-slides #Slides style="height: 400px;width:100%;" loop="true" autoplay="3000" (ionSlideAutoplayStop)="autoPlay()">
+        <ion-slide>
+          <img src="assets/img/product-photo/jd6.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/img/product-photo/jd7.jpg">
+        </ion-slide>
+        <ion-slide>
+          <img src="assets/img/product-photo/jd8.jpg">
+        </ion-slide>
+      </ion-slides>
+    </div>
+    <div>
+      <p style="margin-bottom:5px">【深睡大师】JAHVERY嘉唯大黑基灵动悬浮蓝眼深睡枕 护颈凝胶记忆枕颈枕头 (40*60*8.5cm)</p>
+    </div>
+    <div>
+      <p style="color:red;margin-top:5px;font-size:12px;margin-bottom:5px">【11/11同价返场】 【3件8折 VS 买4免1】【仅限11月13~15日】<a style="color:red;">点击了解更多</a></p>
+    </div>
+    <div>
+      <p style="color:red;margin-top:5px;font-size:16px;font-weight:bold">￥ 9380.00</p>
+    </div>
+
+  </div>
+  <div *ngIf="segment == 'evaluate'" style="background:#F7F7F7;">
+    <!-- 上方评价统计 -->
+    <div class="pinjia">
+      <div>
+        <p>全部评价</p>
+        <p>12</p>
+      </div>
+      <div>
+        <p>好评</p>
+        <p>12</p>
+      </div>
+      <div>
+        <p>中评</p>
+        <p>12</p>
+      </div>
+      <div>
+        <p>差评</p>
+        <p>12</p>
+      </div>
+      <div>
+        <p>晒图</p>
+        <p>12</p>
+      </div>
+    </div>
+    <!-- 评论区 -->
+    <div style="margin-top:60px">
+      <div style="margin-left:10px;display:flex;flex-direction:row;">
+        <img style="border-radius:50%;width:30px;height:30px;margin-top:10px" src="assets/img/1.jpg">
+        <p>爱***1</p>
+        <p style="margin-left:55%">2017-02-14</p>
+      </div>
+      <div style="border-top:1px solid #ddd;width:98%;margin-left:2%"></div>
+      <div>
+        <div style="margin-left:2%;margin-top:5px">
+          <i class="iconfont icon-xing"></i>
+          <i class="iconfont icon-xing"></i>
+          <i class="iconfont icon-xing"></i>
+          <i class="iconfont icon-xing"></i>
+          <i class="iconfont icon-xing"></i>
+        </div>
+        <p style="margin-left:2%;margin-right:2%">
+          &nbsp;&nbsp;&nbsp;&nbsp;啊可是觉得按时扩大骄傲的啊是刷卡的空间，啊可是觉得按时扩大骄傲的啊是刷卡的空间，啊可是觉得按时扩大骄傲的啊是刷卡的空间 啊可是觉得按时扩大骄傲的啊是刷卡的空间，啊可是觉得按时扩大骄傲的啊是刷卡的空间，啊可是觉得按时扩大骄傲的啊是刷卡的空间 啊可是觉得按时扩大骄傲的啊是刷卡的空间啊可是觉得按时扩大骄傲的啊是刷卡的空间啊可是觉得按时扩大骄傲的啊是刷卡的空间啊可是觉得按时扩大骄傲的啊是刷卡的空间
+        </p>
+      </div>
+      <div style="display:flex;flex-direction:row;">
+
+        <p style="margin-left:2% !important;">购买日期:2017-02-10</p>
+        <p style="margin-left:38%">
+          <i class="iconfont icon-aixin1"></i>&nbsp;8
+        </p>
+        <p style="margin-left:15px">
+          <i class="iconfont icon-pinglun"></i>&nbsp;14
+        </p>
+      </div>
+    </div>
+    
+  </div>
+  <div *ngIf="segment == 'info'">
+  </div>
+  <div class="footer">
+    <ion-grid class="grid3">
+      <ion-row>
+        <ion-col col-12 class="col2 ">
+          <ion-card class="card-md3" style="display:flex;flex-direction:row">
+
+            <ion-item style="width:14%">
+              <div style="text-align:center"><i class="iconfont icon-robot"></i></div>
+              <div style="font-size:10px;text-align:center">JIMI</div>
+            </ion-item>
+            <ion-item style="width:14%">
+              <div style="text-align:center"><i class="iconfont icon-dianpu"></i></div>
+              <div style="font-size:10px;text-align:center">店铺</div>
+            </ion-item>
+            <ion-item style="width:14%">
+              <div style="text-align:center"><i class="iconfont icon-45"></i></div>
+              <div style="font-size:10px;text-align:center">关注</div>
+            </ion-item>
+            <ion-item style="width:18%">
+              <div style="text-align:center"><i class="iconfont icon-gouwuchelv"></i></div>
+              <div style="font-size:10px;text-align:center">购物车</div>
+            </ion-item>
+            <ion-item style="width:40%;background:red;color:white">
+              <div style="font-size:14px;text-align:center">加入购物车</div>
+            </ion-item>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
+</ion-content>

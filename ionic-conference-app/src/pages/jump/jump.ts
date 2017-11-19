@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { JumpService } from './jump.service';
+import { ProductInfoPage } from '../product-info/product-info';
 /**
  * Generated class for the JumpPage page.
  *
@@ -16,6 +17,7 @@ import { JumpService } from './jump.service';
 })
 export class JumpPage {
   public url = "https://api.douban.com/v2/movie/top250 ";
+  private nav: any;
   public listData: any = {};
   public pageSize: any = 20;
   public count: any;
@@ -27,11 +29,15 @@ export class JumpPage {
   public dataLength:any;
   constructor(public navCtrl: NavController, public navParams: NavParams, public jumpService: JumpService) {
 
-
+    this.nav = navCtrl;
   }
 
   ionViewDidLoad() {
     this.getTopList();
+  }
+  //点击跳转商品详情页面
+  productInfo(){
+    this.nav.push(ProductInfoPage);
   }
   // 加载更多
   doInfinite(infiniteScroll: any) {

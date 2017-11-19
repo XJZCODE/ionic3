@@ -1,0 +1,59 @@
+page-product-info {
+
+}
+.toolbar-ios .segment-button{
+    max-width: 60px;
+}
+.toolbar-md1{
+    padding-bottom:0px;
+    min-height: 45px;
+}
+div p{
+    margin-left: 5px
+}
+.grid3{
+    padding: 0px !important;
+    flex: 1; 
+  }
+  /*底部的加入购物车模块*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    margin-bottom: 46px;
+  }
+.iconfont:hover{
+    color:red
+}
+.card-md3{
+   
+    height: 55px
+  }
+  //评价
+.pinjia{
+    position:fixed;
+    top:45px;
+    display:flex;
+    flex-direction:row;
+    width:100%;
+    border:1px solid #ddd;
+    font-size:12px;
+    background-color: #ffffff
+}
+.pinjia > div{
+    width:20%;text-align:center;
+}
+.pinjia > div:hover{
+    color:red;
+}
+.pinjia > div > p{
+    margin-bottom: 5px !important; 
+    margin-top: 5px !important;
+}
+h2{
+    font-size: 12px;
+}
+.icon-xing{
+    color: red
+}
+

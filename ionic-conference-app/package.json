@@ -34,6 +34,8 @@
         "@ionic-native/status-bar": "3.13.1",
         "@ionic-native/touch-id": "^4.2.0",
         "@ionic/storage": "2.0.1",
+        "@types/lodash": "^4.14.85",
+        "angular2-jwt": "^0.2.3",
         "cordova-base64-to-gallery": "^4.1.2",
         "cordova-ios": "^4.4.0",
         "cordova-plugin-battery-status": "^1.2.4",
@@ -52,9 +54,11 @@
         "ionic-angular": "3.6.0",
         "ionic-plugin-keyboard": "^2.2.1",
         "ionicons": "3.0.0",
+        "jquery": "^3.2.1",
         "lodash": "^4.17.4",
-        "rxjs": "^5.4.0",
+        "rxjs": "^5.5.2",
         "sw-toolbox": "3.6.0",
+        "swal": "^0.1.0",
         "zone.js": "0.8.12"
     },
     "devDependencies": {

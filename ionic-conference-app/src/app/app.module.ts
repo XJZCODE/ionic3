@@ -36,6 +36,9 @@ import { BatteryStatus } from '@ionic-native/battery-status';
 import { TouchID } from '@ionic-native/touch-id';
 import { HttpClientProvider } from '../providers/http-client/http-client';
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
+import { ProductInfoPage } from '../pages/product-info/product-info';
+
+
 @NgModule({
   declarations: [
     ConferenceApp,
@@ -56,7 +59,8 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
     TutorialPage,
     SupportPage,
     DemoPage,
-    JumpPage
+    JumpPage,
+    ProductInfoPage
   ],
   imports: [
     BrowserModule,
@@ -77,7 +81,8 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
         { component: SupportPage, name: 'SupportPage', segment: 'support' },
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
-        { component: SignupPage, name: 'SignupPage', segment: 'signup' }
+        { component: SignupPage, name: 'SignupPage', segment: 'signup' },
+        { component: ProductInfoPage, name: 'ProductInfoPage', segment: 'productInfo' }
       ]
     }),
     IonicStorageModule.forRoot()
@@ -102,7 +107,8 @@ import { AuthServiceProvider } from '../providers/auth-service/auth-service';
     TutorialPage,
     SupportPage,
     DemoPage,
-    JumpPage
+    JumpPage,
+    ProductInfoPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },

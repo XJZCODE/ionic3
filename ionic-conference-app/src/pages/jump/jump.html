@@ -13,49 +13,194 @@
 </ion-header>
 
 
-<ion-content padding style="background:#EDEDED">
-  <ion-refresher (ionRefresh)="doRefresh($event)">
+<ion-content padding style="background:#EDEDED;">
+  <!-- <ion-refresher (ionRefresh)="doRefresh($event)">
     <ion-refresher-content></ion-refresher-content>
-  </ion-refresher>
-  <ion-grid class="grid2">
-    <ion-row>
-      <!-- <ion-col col-6 *ngFor="let item of listData.subjects;let i=index"> -->
-      <ion-col col-12 class="col2">
-        <ion-card class="card-md2">
-          <ion-item>
-            <ion-label>
+  </ion-refresher> -->
+  <div >
+    <div class="content">
+      <ion-grid class="grid2">
+        <ion-row>
 
-              <div style="display:flex;flex-direction:row">
-                <div>
-                  <img class="shop-cart-img" src="assets/img/fruit/fruit1.jpg" style="width:90px;height:90px;border: 1px solid #ddd;margin-right:5px" />
+          <ion-col col-12 class="col2 ">
+            <ion-card class="card-md2" style="display:flex;flex-direction:row">
+              <ion-item class="item-text-wrap">
+                <ion-checkbox color="danger" checked="true"></ion-checkbox>
+
+              </ion-item>
+              <ion-item>
+
+                <div style="display:flex;flex-direction:row">
+                  <div>
+                    <img class="shop-cart-img" src="assets/img/fruit/fruit1.jpg" style="width:90px;height:90px;border: 1px solid #ddd;margin-right:5px"
+                    />
+                  </div>
+
+                  <div>
+                    <p class="item-text-wrap" (click)="productInfo()">新希望 香蕉牛奶饮品200ml*12盒(新老包装交替发货)</p>
+                    <h4 style="color:#D6D6D6;margin-bottom:30px">颜色:香蕉牛奶</h4>
+                    <span style="color:red">$29.80</span>
+                  </div>
                 </div>
-                <div style="">
-                  <h3>新希望 香蕉牛奶饮品200ml*12盒(新老包装交替发货)</h3>
-                  <h4 style="color:#D6D6D6;margin-bottom:30px">颜色:香蕉牛奶</h4>
-                  <span style="position:fixed;left:37%">$29.80</span>
+
+              </ion-item>
+            </ion-card>
+
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="grid2">
+        <ion-row>
+
+          <ion-col col-12 class="col2 ">
+            <ion-card class="card-md2" style="display:flex;flex-direction:row">
+              <ion-item class="item-text-wrap">
+                <ion-checkbox color="danger" checked="true"></ion-checkbox>
+
+              </ion-item>
+              <ion-item>
+
+                <div style="display:flex;flex-direction:row">
+                  <div>
+                    <img class="shop-cart-img" src="assets/img/fruit/fruit1.jpg" style="width:90px;height:90px;border: 1px solid #ddd;margin-right:5px"
+                    />
+                  </div>
+
+                  <div>
+                    <p class="item-text-wrap">新希望 香蕉牛奶饮品200ml*12盒(新老包装交替发货)</p>
+                    <h4 style="color:#D6D6D6;margin-bottom:30px">颜色:香蕉牛奶</h4>
+                    <span style="color:red">$29.80</span>
+                  </div>
                 </div>
-              </div>
-            </ion-label>
-            <ion-checkbox color="danger" checked="true"></ion-checkbox>
 
-          </ion-item>
+              </ion-item>
+            </ion-card>
 
-        </ion-card>
-        <ion-card class="card-md2">
-          <ion-item>
-            <ion-label><img src="assets/img/fruit/fruit2.jpg" style="width:90px;height:90px;border: 1px solid #ddd" /></ion-label>
-            <ion-checkbox color="danger" checked="true"></ion-checkbox>
-          </ion-item>
+          </ion-col>
 
-        </ion-card>
-      </ion-col>
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="grid2">
+        <ion-row>
 
-    </ion-row>
+          <ion-col col-12 class="col2 ">
+            <ion-card class="card-md2" style="display:flex;flex-direction:row">
+              <ion-item class="item-text-wrap">
+                <ion-checkbox color="danger" checked="true"></ion-checkbox>
+
+              </ion-item>
+              <ion-item>
+
+                <div style="display:flex;flex-direction:row">
+                  <div>
+                    <img class="shop-cart-img" src="assets/img/fruit/fruit1.jpg" style="width:90px;height:90px;border: 1px solid #ddd;margin-right:5px"
+                    />
+                  </div>
+
+                  <div>
+                    <p class="item-text-wrap">新希望 香蕉牛奶饮品200ml*12盒(新老包装交替发货)</p>
+                    <h4 style="color:#D6D6D6;margin-bottom:30px">颜色:香蕉牛奶</h4>
+                    <span style="color:red">$29.80</span>
+                  </div>
+                </div>
+
+              </ion-item>
+            </ion-card>
+
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="grid2">
+        <ion-row>
+
+          <ion-col col-12 class="col2 ">
+            <ion-card class="card-md2" style="display:flex;flex-direction:row">
+              <ion-item class="item-text-wrap">
+                <ion-checkbox color="danger" checked="true"></ion-checkbox>
+
+              </ion-item>
+              <ion-item>
+
+                <div style="display:flex;flex-direction:row">
+                  <div>
+                    <img class="shop-cart-img" src="assets/img/fruit/fruit1.jpg" style="width:90px;height:90px;border: 1px solid #ddd;margin-right:5px"
+                    />
+                  </div>
+
+                  <div>
+                    <p class="item-text-wrap">新希望 香蕉牛奶饮品200ml*12盒(新老包装交替发货)</p>
+                    <h4 style="color:#D6D6D6;margin-bottom:30px">颜色:香蕉牛奶</h4>
+                    <span style="color:red">$29.80</span>
+                  </div>
+                </div>
+
+              </ion-item>
+            </ion-card>
+
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+      <ion-grid class="grid2">
+          <ion-row>
+    
+            <ion-col col-12 class="col2 ">
+              <ion-card class="card-md2" style="display:flex;flex-direction:row">
+                <ion-item class="item-text-wrap">
+                  <ion-checkbox color="danger" checked="true"></ion-checkbox>
+    
+                </ion-item>
+                <ion-item>
+    
+                  <div style="display:flex;flex-direction:row">
+                    <div>
+                      <img class="shop-cart-img" src="assets/img/fruit/fruit1.jpg" style="width:90px;height:90px;border: 1px solid #ddd;margin-right:5px"
+                      />
+                    </div>
+    
+                    <div>
+                      <p class="item-text-wrap">新希望 香蕉牛奶饮品200ml*12盒(新老包装交替发货)</p>
+                      <h4 style="color:#D6D6D6;margin-bottom:30px">颜色:香蕉牛奶</h4>
+                      <span style="color:red">$29.80</span>
+                    </div>
+                  </div>
+    
+                </ion-item>
+              </ion-card>
+    
+            </ion-col>
+    
+          </ion-row>
+        </ion-grid>
+    </div>
 
 
-    <!-- <ion-infinite-scroll (ionInfinite)="doInfinite($event)" [hidden]="!isLoadMore">
-      <ion-infinite-scroll-content></ion-infinite-scroll-content>
-    </ion-infinite-scroll> -->
-  </ion-grid>
   <!-- <ion-item-divider class='list-no-more-tips' color="light" [hidden]="isLoadMore">暂无更多数据...</ion-item-divider> -->
+  <div class="footer">
+      <ion-grid class="grid3">
+          <ion-row>         
+             <ion-col col-12 class="col2 ">
+                <ion-card class="card-md3" style="display:flex;flex-direction:row">
+                    <ion-item class="item-text-wrap">
+                      <ion-checkbox color="danger" checked="true"></ion-checkbox>
+                    </ion-item>
+                    <ion-item style="width:25%">
+                      <span>全选</span>
+                    </ion-item>
+                    <ion-item style="width:40%">
+                          <div>合计：</div>
+                          <div>总额：</div>
+                    </ion-item>
+                    <ion-item style="width:35%;background:red;color:white">
+                        <div>去结算(1)</div>
+                  </ion-item>
+                </ion-card>
+             </ion-col>
+          </ion-row>
+      </ion-grid>
+ 
+  </div>
+</div>
 </ion-content>
