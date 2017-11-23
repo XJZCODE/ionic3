@@ -37,8 +37,8 @@ import { TouchID } from '@ionic-native/touch-id';
 import { HttpClientProvider } from '../providers/http-client/http-client';
 import { AuthServiceProvider } from '../providers/auth-service/auth-service';
 import { ProductInfoPage } from '../pages/product-info/product-info';
-
-
+import { OrderPage } from '../pages/order/order';
+import { AuthHttp } from 'angular2-jwt';
 @NgModule({
   declarations: [
     ConferenceApp,
@@ -60,7 +60,8 @@ import { ProductInfoPage } from '../pages/product-info/product-info';
     SupportPage,
     DemoPage,
     JumpPage,
-    ProductInfoPage
+    ProductInfoPage,
+    OrderPage
   ],
   imports: [
     BrowserModule,
@@ -82,7 +83,8 @@ import { ProductInfoPage } from '../pages/product-info/product-info';
         { component: LoginPage, name: 'LoginPage', segment: 'login' },
         { component: AccountPage, name: 'AccountPage', segment: 'account' },
         { component: SignupPage, name: 'SignupPage', segment: 'signup' },
-        { component: ProductInfoPage, name: 'ProductInfoPage', segment: 'productInfo' }
+        { component: ProductInfoPage, name: 'ProductInfoPage', segment: 'productInfo' },
+        { component: OrderPage, name: 'OrderPage', segment: 'order' }
       ]
     }),
     IonicStorageModule.forRoot()
@@ -108,7 +110,8 @@ import { ProductInfoPage } from '../pages/product-info/product-info';
     SupportPage,
     DemoPage,
     JumpPage,
-    ProductInfoPage
+    ProductInfoPage,
+    OrderPage
   ],
   providers: [
     { provide: ErrorHandler, useClass: IonicErrorHandler },
@@ -121,6 +124,7 @@ import { ProductInfoPage } from '../pages/product-info/product-info';
     BatteryStatus,
     TouchID,
     HttpClientProvider,
+    AuthHttp,
     AuthServiceProvider
 
   ]

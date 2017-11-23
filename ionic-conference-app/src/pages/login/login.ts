@@ -8,32 +8,37 @@ import { NavController } from 'ionic-angular';
 
  import { TabsPage } from '../tabs-page/tabs-page';
 import { SignupPage } from '../signup/signup';
-import { AuthServiceProvider } from '../../providers/auth-service/auth-service';
-
+import { LoginService } from './login.service';
 @Component({
   selector: 'page-user',
-  templateUrl: 'login.html'
+  templateUrl: 'login.html',
+  providers: [LoginService]
 })
 export class LoginPage {
   private nav: any;
-  private usercreds: any;
+  public user = {
+		username: "",
+    password: "",
+    role:"admin"
+	};
+  // private usercreds: any;
   // private service: any;
-  constructor(public navCtrl: NavController, private authservice: AuthServiceProvider) {
+  constructor(public navCtrl: NavController,public loginService:LoginService) {
 
     this.nav = navCtrl;
-    this.usercreds = {
-      name: '',
-      password: ''
-    }
+
 
   }
-  login(user: any) {
+  login() {
     // console.log(user);
-    this.authservice.authenticate(user).subscribe(data => {
+    let postBody = this.user;
+    this.loginService.login(postBody).subscribe(data => {
       if (data) {
         console.log(data);
         this.nav.push(TabsPage);
         console.log('---------------登录成功----------------');
+      }else{
+        this.nav.push(LoginPage);
       }
     });
   }

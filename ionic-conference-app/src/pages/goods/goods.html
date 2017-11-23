@@ -17,9 +17,15 @@
       <ion-col col-4>
         <span>新鲜水果</span>
       </ion-col>
-      <ion-col col-12>
-          <div style="display:inline-block;width:32%"><img src="assets/img/fruit/fruit1.jpg"><p>苹果</p></div>
-          <div style="display:inline-block;width:32%"><img src="assets/img/fruit/fruit2.jpg"><p>香蕉</p></div>
+      <ion-col col-12 *ngFor="let item of goodslist;">
+        <div style="display:inline-block;width:32%">
+          <div *ngFor="let item1 of item.photos;">
+            {{item1.path}}
+            <img src="">
+          </div>
+          <p>{{item.product_name}}</p>
+        </div>
+        <!-- <div style="display:inline-block;width:32%"><img src="assets/img/fruit/fruit2.jpg"><p>香蕉</p></div>
           <div style="display:inline-block;width:32%"><img src="assets/img/fruit/fruit3.jpg"><p>梨</p></div>
           <div style="display:inline-block;width:32%"><img src="assets/img/fruit/fruit4.jpg"><p>橘子</p></div>
           <div style="display:inline-block;width:32%"><img src="assets/img/fruit/fruit5.jpg"><p>奇异果</p></div>
@@ -32,7 +38,7 @@
           <div style="display:inline-block;width:32%"><img src="assets/img/fruit/fruit12.jpg"><p>火龙果</p></div>
           <div style="display:inline-block;width:32%"><img src="assets/img/fruit/fruit13.png"><p>橘子</p></div>
           <div style="display:inline-block;width:32%"><img src="assets/img/fruit/fruit14.png"><p>奇异果</p></div>
-          <div style="display:inline-block;width:32%"><img src="assets/img/fruit/fruit15.jpg"><p>火龙果</p></div>
+          <div style="display:inline-block;width:32%"><img src="assets/img/fruit/fruit15.jpg"><p>火龙果</p></div> -->
       </ion-col>
       <!-- <ion-col col-12>
         <ion-card col-4>

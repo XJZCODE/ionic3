@@ -32,7 +32,6 @@ export class ProductInfoPage {
     this.slides.startAutoplay();
   }
   //点赞
-  dianzang(){
-    
+  dianzan(){
   }
 }

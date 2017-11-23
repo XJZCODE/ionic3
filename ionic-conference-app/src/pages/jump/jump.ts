@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 import { JumpService } from './jump.service';
 import { ProductInfoPage } from '../product-info/product-info';
+import { OrderPage } from '../order/order';
 /**
  * Generated class for the JumpPage page.
  *
@@ -38,6 +39,9 @@ export class JumpPage {
   //点击跳转商品详情页面
   productInfo(){
     this.nav.push(ProductInfoPage);
+  }
+  toOrder(){
+    this.nav.push(OrderPage);
   }
   // 加载更多
   doInfinite(infiniteScroll: any) {
