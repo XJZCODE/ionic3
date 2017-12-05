@@ -28,10 +28,10 @@ page-schedule {
   height:35px;
 }
 .list-md {
-  margin: -1px 0 3px;
+  margin: -3px 0 3px;
 }
 .list-ios {
-  margin: -1px 0 3px;
+  margin: -3px 0 3px;
   white-space:nowrap;
 }
 .col{
@@ -40,12 +40,58 @@ page-schedule {
 ion-col p{
   margin-top:0px;
   text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color:#777777;
 }
 .button-effect1 {
   height: 1px;
   border-top: 1px solid #ddd;
   text-align: center;
 
+}
+.ion-col2{
+  margin-left:6%;
+  text-align: center;
+}
+.ion-col2 p{
+  width:50px !important;
+}
+.ion-col2 div img{
+  border-radius:35%;
+  height:70%;
+  width:70%;
+}
+.product-life{
+  height:27%;
+  width:100%;
+  white-space:nowrap;
+  overflow:scroll;
+  background-color:white;
+  
+}
+.product-life >div{
+  width:30%;
+  display:inline-block;
+  text-align: center;
+  color:red;
+  margin-top: 15px;
+}
+.product-life >div >img{
+  
+  height:100px;
+  width:100px;
+}
+.product-title{
+  display:flex;
+  justify-content:space-between;
+  background-color:white
+}
+.product-title{
+  margin-left:10px;
+  margin-top:5px;
+  color:red;
+  font-size: 12px;
 }
 // .scroll-content{
 //   overflow-y: hidden;

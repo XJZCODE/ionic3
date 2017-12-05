@@ -1,0 +1,68 @@
+
+    .button-effect1 {
+        height: 1px;
+        border-top: 1px solid #ddd;
+        text-align: center;
+    
+      }
+      .demo-background{
+        color: #60646B;
+        background: #EDEDED;
+      }
+      ion-app.md [padding] .scroll-content {
+        padding: 1px;
+      }
+      .card-change{
+        margin:0px 0px 10px 0px !important;
+        width:100% !important;
+        height:25% !important;
+      }
+      .card-change2{
+        margin:0px 0px 10px 0px !important;
+        width:100% !important;
+      }
+      .card-change2 button span{
+        font-size:14px;
+      }
+    
+    .userName{
+      text-align:center;
+      display:flex;
+      justify-content:center;
+      margin-top: 5px;
+      color:white
+    }
+    .userName h2{
+      color:white;
+    }
+    .userImg{
+      text-align:center;
+      display:flex;
+      justify-content:center
+    }
+    .userImg img{
+      width:70px;
+      height:70px;
+      border-radius:50%;
+      border:2px solid white;
+    }
+    
+    .card-change3{
+      margin:0px 0px 10px 0px !important;
+      width:100% !important;
+      display: flex;
+      flex-direction:row;
+    }
+    .card-change3 div{
+      display: flex;
+      flex-direction:column;
+      text-align: center;
+      width: 20%;
+    }
+    .card-change3 div span{
+      font-size: 12px;
+    }
+    .card-change3 div i{
+      margin-top: 10px;
+    }
+

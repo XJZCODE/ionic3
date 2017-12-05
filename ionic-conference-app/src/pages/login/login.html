@@ -1,18 +1,18 @@
 <ion-header>
-  <ion-navbar>
-    <button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
-    <ion-title>Login</ion-title>
-  </ion-navbar>
+	<ion-navbar>
+		<button ion-button menuToggle>
+			<ion-icon name="menu"></ion-icon>
+		</button>
+		<ion-title>蔬果商城登录</ion-title>
+	</ion-navbar>
 </ion-header>
 
 <ion-content>
-  <div class="logo">
-    <img src="assets/img/appicon.svg" alt="Ionic logo">
-  </div>
+	<div class="logo">
+		<img src="assets/img/appicon.svg" alt="Ionic logo">
+	</div>
 
-  <!-- <form #loginForm="ngForm" novalidate>
+	<!-- <form #loginForm="ngForm" novalidate>
 		<ion-list no-lines>
 			<ion-item>
 				<ion-label stacked color="primary">Username</ion-label>
@@ -43,22 +43,44 @@
 			</ion-col>
 		</ion-row>
 	</form> -->
-  <h3>Please login</h3>
-  <p>
-    Type username and password to login
-  </p>
-
-  <ion-list>
-    <ion-item>
-      <ion-label floating>Username</ion-label>
-      <ion-input [(ngModel)]='user.username' name="username" type="text"></ion-input>
-    </ion-item>
-    <ion-item>
-      <ion-label floating>Password</ion-label>
-      <ion-input [(ngModel)]='user.password' name="password" type="password"></ion-input>
+	<!-- <ion-list>
+		<ion-item>
+			<ion-label>账号</ion-label>
+			<ion-input [(ngModel)]='user.username' name="username" type="text"></ion-input>
 		</ion-item>
-		
-  </ion-list>
-  <button ion-button (click)="login()">Login</button>
-  <button ion-button (click)="signUp()">Signup</button>
+		<ion-item>
+			<ion-label>密码</ion-label>
+			<ion-input [(ngModel)]='user.password' name="password" type="password"></ion-input>
+		</ion-item>
+
+	</ion-list>
+	<button ion-button (click)="login()">登录</button>
+	<button ion-button (click)="signUp()">注册</button> -->
+
+
+
+
+
+	<ion-item style="padding-left:15px !important;padding-right:15px !important;">
+		<ion-label fixed>账号</ion-label>
+		<ion-input type="text" [(ngModel)]='user.username' name="username" placeholder="请输入账号" #username></ion-input>
+	</ion-item>
+	<ion-item style="padding-left:15px !important;padding-right:15px !important;">
+		<ion-label fixed>密码</ion-label>
+		<ion-input type="password" [(ngModel)]='user.password' name="password" placeholder="请输入密码" #password></ion-input>
+	</ion-item>
+
+	<div style="text-align: center;margin:10px 15px 0px 15px">
+		<button ion-button block color="danger" (click)="login()">
+			登录
+		</button>
+	</div>
+	<div style="text-align: center;margin:10px 15px 0px 15px">
+		<button ion-button block color="danger" (click)="signUp()">
+			注册
+		</button>
+	</div>
+	<div style="text-align: center;margin:10px 15px 0px 15px">
+		忘记密码?
+	</div>
 </ion-content>

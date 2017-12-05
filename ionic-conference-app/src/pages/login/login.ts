@@ -6,7 +6,7 @@ import { NavController } from 'ionic-angular';
 
 // import { UserOptions } from '../../interfaces/user-options';
 
- import { TabsPage } from '../tabs-page/tabs-page';
+import { TabsPage } from '../tabs-page/tabs-page';
 import { SignupPage } from '../signup/signup';
 import { LoginService } from './login.service';
 @Component({
@@ -17,13 +17,13 @@ import { LoginService } from './login.service';
 export class LoginPage {
   private nav: any;
   public user = {
-		username: "",
+    username: "",
     password: "",
-    role:"admin"
-	};
+    role: "user"
+  };
   // private usercreds: any;
   // private service: any;
-  constructor(public navCtrl: NavController,public loginService:LoginService) {
+  constructor(public navCtrl: NavController, public loginService: LoginService) {
 
     this.nav = navCtrl;
 
@@ -37,7 +37,7 @@ export class LoginPage {
         console.log(data);
         this.nav.push(TabsPage);
         console.log('---------------登录成功----------------');
-      }else{
+      } else {
         this.nav.push(LoginPage);
       }
     });

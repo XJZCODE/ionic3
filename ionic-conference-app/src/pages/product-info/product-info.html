@@ -28,7 +28,7 @@
     <div style="box-shadow: 0px -1px 3px #DDDDDD inset;">
       <ion-slides #Slides style="height: 400px;width:100%;" loop="true" autoplay="3000" (ionSlideAutoplayStop)="autoPlay()">
         <ion-slide>
-          <img src="assets/img/product-photo/jd6.jpg">
+          <img [src]="server+product_info.photo_path">
         </ion-slide>
         <ion-slide>
           <img src="assets/img/product-photo/jd7.jpg">
@@ -39,13 +39,13 @@
       </ion-slides>
     </div>
     <div>
-      <p style="margin-bottom:5px">【深睡大师】JAHVERY嘉唯大黑基灵动悬浮蓝眼深睡枕 护颈凝胶记忆枕颈枕头 (40*60*8.5cm)</p>
+      <p style="margin-bottom:5px">【{{product_info.product_name}}】{{product_info.product_description}}</p>
     </div>
     <div>
       <p style="color:red;margin-top:5px;font-size:12px;margin-bottom:5px">【11/11同价返场】 【3件8折 VS 买4免1】【仅限11月13~15日】<a style="color:red;">点击了解更多</a></p>
     </div>
     <div>
-      <p style="color:red;margin-top:5px;font-size:16px;font-weight:bold">￥ 9380.00</p>
+      <p style="color:red;margin-top:5px;font-size:16px;font-weight:bold">￥ {{product_info.product_price}}</p>
     </div>
 
   </div>
@@ -132,7 +132,7 @@
               <div style="font-size:10px;text-align:center">购物车</div>
             </ion-item>
             <ion-item style="width:40%;background:red;color:white">
-              <div style="font-size:14px;text-align:center">加入购物车</div>
+              <div style="font-size:14px;text-align:center" (click)="toShoppingCar()">加入购物车</div>
             </ion-item>
           </ion-card>
         </ion-col>

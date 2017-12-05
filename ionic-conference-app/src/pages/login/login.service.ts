@@ -9,6 +9,6 @@ export class LoginService {
     ) { }
     
     login(postBody:any) {
-        return this.http.post('http://192.168.43.70:3018/api/v1/users/login/password',postBody);
+        return this.http.post('http://192.168.1.101:3018/api/v1/users/login/password',postBody);
       }
 }

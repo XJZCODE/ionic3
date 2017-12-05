@@ -4,7 +4,7 @@
       <ion-icon name="menu"></ion-icon>
     </button> -->
 
-    <!-- <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
+  <!-- <ion-segment [(ngModel)]="segment" (ionChange)="updateSchedule()">
       <ion-segment-button value="all">
         All
       </ion-segment-button>
@@ -19,7 +19,7 @@
       </button>
     </ion-buttons> -->
 
-    <!-- <ion-searchbar color="primary" [(ngModel)]="queryText" (ionInput)="updateSchedule()" placeholder="Search" style="opacity: 0.8;">
+  <!-- <ion-searchbar color="primary" [(ngModel)]="queryText" (ionInput)="updateSchedule()" placeholder="Search" style="opacity: 0.8;">
     </ion-searchbar>
 
   </ion-navbar> -->
@@ -75,71 +75,105 @@
     </ion-item-group>
 
   </ion-list> -->
-  <ion-list  style="margin-top:150px">
-    <ion-grid>
-      <ion-row>
-        <ion-col col-2>
-          <img src="assets/img/jingdon.jpg">
-          <p>全球购</p>
-        </ion-col>
-        <ion-col col-2>
-          <img src="assets/img/jingdon.jpg">
-          <p>全球购</p>
-        </ion-col>
-        <ion-col col-2>
-          <img src="assets/img/jingdon.jpg">
-          <p>全球购</p>
-        </ion-col>
-        <ion-col col-2>
-          <img src="assets/img/jingdon.jpg">
-          <p>全球购</p>
-        </ion-col>
-        <ion-col col-2>
-          <img src="assets/img/jingdon.jpg">
-          <p>全球购</p>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-list>
-  <ion-list>
-    <ion-grid>
-      <ion-row>
-        <ion-col col-2>
-          <img src="assets/img/jingdon.jpg">
-          <p>全球购</p>
-        </ion-col>
-        <ion-col col-2>
-          <img src="assets/img/jingdon.jpg">
-          <p>全球购</p>
-        </ion-col>
-        <ion-col col-2>
-          <img src="assets/img/jingdon.jpg">
-          <p>全球购</p>
-        </ion-col>
-        <ion-col col-2>
-          <img src="assets/img/jingdon.jpg">
-          <p>全球购</p>
-        </ion-col>
-        <ion-col col-2>
-          <img src="assets/img/jingdon.jpg">
-          <p>全球购</p>
-        </ion-col>
-      </ion-row>
-    </ion-grid>
-  </ion-list>
-  <div class="button-effect1"></div>
-  <div style="height:200px;width:100%;white-space:nowrap;overflow:scroll;">
-      <div style="width:30%;display:inline-block;text-align: center;color:red;"><img src="assets/img/yintao.jpg"><p>$999</p></div>
-      <div style="width:30%;display:inline-block;text-align: center;color:red;"><img src="assets/img/yintao.jpg"><p>$999</p></div>
-      <div style="width:30%;display:inline-block;text-align: center;color:red;"><img src="assets/img/yintao.jpg"><p>$999</p></div>
-      <div style="width:30%;display:inline-block;text-align: center;color:red;"><img src="assets/img/yintao.jpg"><p>$999</p></div>
-      <div style="width:30%;display:inline-block;text-align: center;color:red;"><img src="assets/img/yintao.jpg"><p>$999</p></div>
-      <!-- <img style="width:30%;" src="assets/img/yintao.jpg">
+  <div>
+    <ion-list style="margin-top:150px">
+      <ion-grid style="padding-bottom: 0px;">
+        <ion-row>
+          <ion-col class="ion-col2" col-2>
+            <div>
+              <img src="assets/img/fruit/apple.png">
+            </div>
+            <p>国产水果</p>
+          </ion-col>
+          <ion-col class="ion-col2" col-2>
+            <div>
+              <img src="assets/img/fruit/cherry.png">
+            </div>
+            <p>全球购</p>
+          </ion-col>
+          <ion-col class="ion-col2" col-2>
+            <div>
+              <img src="assets/img/fruit/orange.png">
+            </div>
+            <p>全球购</p>
+          </ion-col>
+          <ion-col class="ion-col2" col-2>
+            <div>
+              <img src="assets/img/fruit/strawberry.png">
+            </div>
+            <p>全球购</p>
+          </ion-col>
+        </ion-row>
+      </ion-grid>
+    </ion-list>
+    <ion-list>
+      <ion-grid style="padding-top: 0px;">
+        <ion-row>
+          <ion-col class="ion-col2" col-2>
+            <div>
+              <img src="assets/img/fruit/cabbage (1).png">
+            </div>
+            <p>全球购</p>
+          </ion-col>
+          <ion-col class="ion-col2" col-2>
+            <div>
+              <img src="assets/img/fruit/cabbage (2).png">
+            </div>
+            <p>全球购</p>
+          </ion-col>
+          <ion-col class="ion-col2" col-2>
+            <div>
+              <img src="assets/img/fruit/cabbage (3).png">
+            </div>
+            <p>全球购</p>
+          </ion-col>
+          <ion-col class="ion-col2" col-2>
+            <div>
+              <img src="assets/img/fruit/cabbage (4).png">
+            </div>
+            <p>全球购</p>
+          </ion-col>
+
+        </ion-row>
+      </ion-grid>
+    </ion-list>
+  </div>
+  <div style="height:1px;background-color:#ddd"></div>
+  <div class="product-title">
+    <div>
+      <span style="font-weight:bold;font-size:14px">京东秒杀</span>
+      <span style="color:black;font-weight:bold">10点场</span>
+    </div>
+    <div>京选尖货秒 <i class="iconfont icon-gengduo-copy"></i></div>
+  </div>
+  <div class="product-life">
+    <div>
+      <img src="assets/img/fruit/fruit17.jpg">
+      <p>$999</p>
+    </div>
+    <div>
+      <img src="assets/img/fruit/fruit18.jpg">
+      <p>$999</p>
+    </div>
+    <div>
+      <img src="assets/img/fruit/fruit19.jpg">
+      <p>$999</p>
+    </div>
+    <div>
+      <img src="assets/img/fruit/fruit20.jpg">
+      <p>$999</p>
+    </div>
+    <div>
+      <img src="assets/img/fruit/fruit17.jpg">
+      <p>$999</p>
+    </div>
+    <!-- <img style="width:30%;" src="assets/img/yintao.jpg">
       <img style="width:30%;" src="assets/img/yintao.jpg">
       <img style="width:30%;" src="assets/img/yintao.jpg">
       <img style="width:30%;" src="assets/img/yintao.jpg">
       <img style="width:30%;" src="assets/img/yintao.jpg"> -->
   </div>
+  <div style="height:1px;background-color:#ddd"></div>
   <!-- <ion-list>
       <ion-grid>
           <ion-row>
@@ -158,22 +192,6 @@
           </ion-row>
       </ion-grid>
   </ion-list> -->
-  <ion-scroll scrollX="true">
-    
-    </ion-scroll>
-  <ion-list-header [hidden]="shownSessions > 0">
-    No Sessions Found
-  </ion-list-header>
-
-  <ion-fab bottom right #fab>
-    <button ion-fab><ion-icon name="md-cart"></ion-icon></button>
-    <!-- <ion-fab-list side="top">
-      <button ion-fab color="vimeo" (click)="openSocial('Vimeo', fab)"><ion-icon name="logo-vimeo"></ion-icon></button>
-      <button ion-fab color="google" (click)="openSocial('Google+', fab)"><ion-icon name="logo-googleplus"></ion-icon></button>
-      <button ion-fab color="twitter" (click)="openSocial('Twitter', fab)"><ion-icon name="logo-twitter"></ion-icon></button>
-      <button ion-fab color="facebook" (click)="openSocial('Facebook', fab)"><ion-icon name="logo-facebook"></ion-icon></button>
-    </ion-fab-list> -->
-  </ion-fab>
 
 
 </ion-content>

@@ -1,8 +1,8 @@
 <ion-header>
 	<ion-navbar>
 		<button ion-button menuToggle>
-      <ion-icon name="menu"></ion-icon>
-    </button>
+			<ion-icon name="menu"></ion-icon>
+		</button>
 		<ion-title>Signup</ion-title>
 	</ion-navbar>
 </ion-header>
@@ -13,12 +13,12 @@
 		<img src="assets/img/appicon.svg" alt="Ionic Logo">
 	</div>
 
-	<form  novalidate>
-			<!-- <form #signupForm="ngForm" novalidate> -->
+	<form novalidate>
+		<!-- <form #signupForm="ngForm" novalidate> -->
 		<ion-list no-lines>
 			<ion-item>
 				<ion-label stacked color="primary">Username</ion-label>
-				<ion-input [(ngModel)] = "newcreds.name" name="username" type="text" #name="ngModel" required>
+				<ion-input [(ngModel)]="user.username" name="username" type="text" required>
 				</ion-input>
 			</ion-item>
 			<!-- <p ion-text [hidden]="username.valid || submitted == false" color="danger" padding-left>
@@ -27,16 +27,26 @@
 
 			<ion-item>
 				<ion-label stacked color="primary">Password</ion-label>
-				<ion-input [(ngModel)] = "newcreds.password" name="password" type="password" #password="ngModel" required>
+				<ion-input [(ngModel)]="user.password" name="password" type="password" required>
 				</ion-input>
 			</ion-item>
 			<!-- <p ion-text [hidden]="password.valid || submitted == false" color="danger" padding-left>
 				Password is required
 			</p> -->
+			<ion-item>
+				<ion-label stacked color="primary">Email</ion-label>
+				<ion-input [(ngModel)]="user.email" name="email" type="email" required>
+				</ion-input>
+			</ion-item>
+			<ion-item>
+				<ion-label stacked color="primary">Mobile</ion-label>
+				<ion-input [(ngModel)]="user.mobile" name="mobile" type="mobile" required>
+				</ion-input>
+			</ion-item>
 		</ion-list>
 
 		<div padding>
-			<button ion-button (click)="register(newcreds)" type="submit" block>Create</button>
+			<button ion-button (click)="signup()" type="submit" block>注册</button>
 		</div>
 	</form>
 

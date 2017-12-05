@@ -1,8 +1,8 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
-import { PayPage } from '../pay/pay';
+
 /**
- * Generated class for the OrderPage page.
+ * Generated class for the OrderListPage page.
  *
  * See http://ionicframework.com/docs/components/#navigation for more info
  * on Ionic pages and navigation.
@@ -10,20 +10,17 @@ import { PayPage } from '../pay/pay';
 
 @IonicPage()
 @Component({
-  selector: 'page-order',
-  templateUrl: 'order.html',
+  selector: 'page-order-list',
+  templateUrl: 'order-list.html',
 })
-export class OrderPage {
+export class OrderListPage {
   public nav:any;
   constructor(public navCtrl: NavController, public navParams: NavParams) {
     this.nav = navCtrl;
   }
 
   ionViewDidLoad() {
-    console.log('ionViewDidLoad OrderPage');
+    console.log('ionViewDidLoad OrderListPage');
   }
-  //点击跳转到支付页面
-  toPay() {
-    this.nav.push(PayPage);
-  }
+
 }

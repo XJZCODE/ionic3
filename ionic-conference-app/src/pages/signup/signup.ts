@@ -2,54 +2,38 @@ import { Component } from '@angular/core';
 // import { NgForm } from '@angular/forms';
 // import { Http, ConnectionBackend } from '@angular/http';
 import { NavController } from 'ionic-angular';
-import { AlertController } from 'ionic-angular';
-import { UserData } from '../../providers/user-data';
-import {AuthServiceProvider} from '../../providers/auth-service/auth-service';
-import { UserOptions } from '../../interfaces/user-options';
+import { SignupService } from './signup.service';
 // import { TabsPage } from '../tabs-page/tabs-page';
-
+import { TabsPage } from '../tabs-page/tabs-page';
 
 @Component({
   selector: 'page-user',
-  templateUrl: 'signup.html'
+  templateUrl: 'signup.html',
+  providers: [SignupService]
 })
 export class SignupPage {
-  signup: UserOptions = { username: '', password: '' };
-  submitted = false;
-  private newcreds: any;
+    private nav: any;
+    public user = {
+      username: "",
+      password: "",
+      email:"",
+      mobile:""
+      };
   // private authService: AuthServiceProvider;
-  constructor(public navCtrl: NavController, public userData: UserData,private authService: AuthServiceProvider, private alertController: AlertController) 
-  
-  {
-    this.newcreds = {
-      name: '',
-      password: ''
+  constructor(public navCtrl: NavController,public signupService:SignupService) {
+    this.nav = navCtrl;
   }
-
-  }
-
-  register(user:any) {
-    console.log(user);
-    this.authService.adduser(user).then(data => {
-        if(data) {
-            let alert = this.alertController.create({
-                title: '注册成功',
-                subTitle: '用户已创建',
-                buttons: ['好的']
-            });
-            alert.present();
-        }
-    }, error => {
-        console.error("Failed!", error);
+  signup() {
+    // console.log(user);
+    let postBody = this.user;
+    this.signupService.signup(postBody).subscribe(data => {
+      if (data) {
+        console.log(data);
+        this.nav.push(TabsPage);
+        console.log('---------------注册成功----------------');
+      }else{
+        this.nav.push(SignupPage);
+      }
     });
-}
-
-// onSignup(form: NgForm) {
-//   this.submitted = true;
-
-//   if (form.valid) {
-//     this.userData.signup(this.signup.username);
-//     this.navCtrl.push(TabsPage);
-//   }
-// }
+  }
 }

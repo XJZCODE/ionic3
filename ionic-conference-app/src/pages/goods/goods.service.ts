@@ -10,6 +10,6 @@ export class GoodsService {
     ) { }
     
     list() {
-        return this.http.get('http://192.168.43.70:3018/api/v1/products/list/photo');
+        return this.http.post('http://192.168.99.1:3018/api/v1/products/list/photo',{});
       }
 }

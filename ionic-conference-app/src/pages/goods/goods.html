@@ -17,11 +17,10 @@
       <ion-col col-4>
         <span>新鲜水果</span>
       </ion-col>
-      <ion-col col-12 *ngFor="let item of goodslist;">
-        <div style="display:inline-block;width:32%">
-          <div *ngFor="let item1 of item.photos;">
-            {{item1.path}}
-            <img src="">
+      <ion-col col-12>
+        <div style="display:inline-block;width:32%;margin-right:3px" *ngFor="let item of goodslist;" (click)="toProductInfo(item)">
+          <div *ngFor="let item1 of item.photos;">           
+            <img style="height:80px;width:85px" [src]="server+item1.path">
           </div>
           <p>{{item.product_name}}</p>
         </div>
